@@ -26,7 +26,6 @@ class UseDateBase:
             return err
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-
         if exc_val is None:
             self.con.commit()
             self.con.close()
